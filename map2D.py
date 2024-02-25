@@ -21,17 +21,17 @@ def display_2d_map(MAP):
     for y in range(len(MAP)):
         for x in range(len(MAP[y])):
             # color the walls
-            if MAP[y][x] == "0":
+            if MAP[y][x] == 0:
                 continue
-            elif MAP[y][x] == "1":
+            elif MAP[y][x] == 1:
                 turtle.color("white")
-            elif MAP[y][x] == "2":
+            elif MAP[y][x] == 2:
                 turtle.color("red")
-            elif MAP[y][x] == "3":
+            elif MAP[y][x] == 3:
                 turtle.color("blue")
-            elif MAP[y][x] == "4":
+            elif MAP[y][x] == 4:
                 turtle.color("green")
-            elif MAP[y][x] == "5":
+            elif MAP[y][x] == 5:
                 turtle.color("yellow")
             # draw the walls
             turtle.goto(
@@ -48,7 +48,6 @@ def display_2d_map(MAP):
     turtle.done()
 
 if __name__ == "__main__":
-    print("MAP")
     display_2d_map(
         load_map("maps/lode.txt")
     )
