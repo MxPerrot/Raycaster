@@ -2,6 +2,7 @@ import turtle
 from loadMap import load_map
 
 def display_2d_map(MAP):
+    """Display a 2d map using turtle graphics."""
     MAP_WIDTH = len(MAP[0])
     MAP_HEIGHT = len(MAP)
     TILE_SIDE = 16 # side length of a square, used by turtle to draw the 2d map

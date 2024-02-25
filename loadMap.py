@@ -1,5 +1,5 @@
 def load_map(file_name):
-    """Load a map from a file."""
+    """Loads a map from a text file."""
     with open(file_name, "r") as f:
         return [line.strip() for line in f.readlines()]
     
